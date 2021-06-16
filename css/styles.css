@@ -183,6 +183,23 @@ body {
   color: var(--primary-white-color);
 }
 
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
 .hero-title {
   width: 696px;
   margin-left: auto;
@@ -236,7 +253,38 @@ body {
 
 .features-item {
   width: 270px;
-  height: 105px;
+}
+
+.features-item::before {
+  content: '';
+  display: block;
+
+  height: 120px;
+
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-attention::before {
+  background-image: url(../images/group1.svg);
+}
+
+.icon-attention::before {
+  background-image: url(../images/group1.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/group2.svg);
+}
+
+.icon-planning::before {
+  background-image: url(../images/group3.svg);
+}
+
+.icon-technologies::before {
+  background-image: url(../images/group4.svg);
 }
 
 .features-subtitle {
@@ -244,7 +292,7 @@ body {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 2.142;
+  line-height: 1.142;
 }
 
 .features-text {
@@ -299,6 +347,7 @@ body {
 
 .team-list {
   display: flex;
+  outline: 1px solid tomato;
 }
 
 .team-item {
@@ -484,7 +533,6 @@ body {
 
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
