@@ -646,6 +646,7 @@ body {
 
 /* ! */
 .join-subtitle {
+  /* display: block; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -683,4 +684,19 @@ body {
 .social-icon-bottom {
   width: 22px;
   height: 22px;
+}
+
+/* ? */
+.coordinates .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join {
+  /* margin-top: 12px; */
+  margin-left: 70px;
+  /* padding-left: 70px; */
+}
+
+.social-links-list-bottom {
 }
