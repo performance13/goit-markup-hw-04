@@ -337,6 +337,7 @@ body {
 
   font-weight: 700;
   font-size: 36px;
+  line-height: 1.166;
 
   text-align: center;
 }
@@ -361,6 +362,7 @@ body {
 
   font-weight: 700;
   font-size: 36px;
+  line-height: 1.166;
 
   text-align: center;
 }
@@ -583,9 +585,63 @@ body {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
+  stroke: inherit;
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
 }
+
+/* ! */
+.clients {
+  padding-top: var(--section-indent);
+  padding-bottom: var(--section-indent);
+  background-color: var(--primary-white-color);
+}
+
+.clients-subtitle {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list .clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 4%;
+  border: 1px solid var(--color-icon);
+
+  fill: var(--color-icon);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.client-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+}
+
+/* ! */
