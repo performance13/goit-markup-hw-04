@@ -13,6 +13,7 @@
   --section-indent: 94px;
   --card-indent: 30px;
   --click-order: #188ce8;
+  --color-icon: #afb1b8;
 }
 
 /*! CANCELING DEFAULT STYLES */
@@ -366,7 +367,6 @@ body {
 
 .team-list {
   display: flex;
-  outline: 1px solid tomato;
 }
 
 .team-item {
@@ -374,7 +374,7 @@ body {
 }
 
 .team-field {
-  padding: 30px;
+  padding: 30px 32px 8px 32px;
 
   text-align: center;
 }
@@ -555,3 +555,43 @@ body {
 
   color: var(--secondary-text-color);
 }
+
+/* ! */
+
+.social-links-list {
+  display: flex;
+  /* margin-bottom: 0;
+  margin-top: 16px; */
+  padding: 8px 32px 30px 32px;
+  /* margin: 8px 32px 30px 32px; */
+
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  fill: var(--primary-white-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  /* fill: var(--primary-white-color); */
+  fill: var(--color-icon);
+}
+
+.social-icon:hover {
+  fill: var(--accent-color);
+  background: rgba(0, 0, 0, 0);
+}
+
+/* .social-icon {
+  width: 20px;
+  height: 20px;
+} */
