@@ -66,3 +66,56 @@
 
 «C6» При ховере или фокусе, иконки должны переходить в активное состояние -
 изменять цвет, если это указано в макете.
+
+/_ ! _/ .active-page { color: var(--accent-color); position: relative; }
+
+.active-page::after { display: block; content: '\1F440'; text-align: center;
+width: 100%; height: 1px; background-repeat: 40px; background-color:
+var(--accent-color); border: 2px solid; border-radius: 10px; position: absolute;
+bottom: -1px; }
+
+.menu-list a:hover, .menu-list a:focus, .top-contacts-list a:hover,
+.top-contacts-list a:focus { color: var(--accent-color); transition: color 300ms
+cubic-bezier(0.2, 0, 0.2, 1); }
+
+/_ !! _/ .chat-button { /_ position: sticky; _/ position: fixed; /_ top: 0px; _/
+
+right: 50px; bottom: 70px;
+
+display: inline-block; width: 70px; height: 70px; padding: 0; border: none;
+background-color: transparent; background-image: url(../images/chat-icon.svg);
+background-repeat: no-repeat; background-size: contain; }
+
+/_ !!! _/ .project-item { position: relative; overflow: hidden; cursor: pointer;
+}
+
+.project-item:hover .overlay { transform: translateX(0); }
+
+.overlay { position: absolute; /_ transform: translateX(-100%); _/ /_ transform:
+translateY(-100%); _/ /_ transform: translateX(100%); _/ /_ transform:
+translateY(138%); _/ /_ transform: translate(-100%, -100%); _/ /_ transform:
+translate(100%, 100%); _/ /_ transform: translate(-100%, 100%); _/ /_ transform:
+translate(100%, -100%); _/ /_ transform: translate(-100%, 100%); _/
+
+transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+cursor: pointer; } .description { padding: 63px 24px;
+
+font-size: 18px; line-height: 1.555; letter-spacing: 0.03em;
+
+background-color: var(--overlay-color); color: var(--primary-white-color); }
+
+              <!-- !!! -- portfolio.html>
+              <div class="overlay">
+                <p class="description">
+                  Технокряк - это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищенные сервера конкурентов.
+                </p>
+              </div>
+              <!-- !!! -->
+
+
+        <!-- !! -->
+        <button class="chat-button"></button>
+        <!-- !! -->
