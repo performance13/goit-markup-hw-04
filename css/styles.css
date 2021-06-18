@@ -18,6 +18,7 @@
   --box-shadow1: 0px 2px 1px 0px #00000033;
   --box-shadow2: 0px 1px 1px 0px #00000024;
   --box-shadow3: 0px 1px 3px 0px #0000001f;
+  --overlay-color: rgba(33, 150, 243, 0.9);
 }
 
 /*! CANCELING DEFAULT STYLES */
@@ -207,7 +208,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.overlay {
+.overlays {
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
@@ -658,6 +659,16 @@ body {
   margin-bottom: var(--card-indent);
 
   flex-basis: calc(100% / 3 - var(--card-indent));
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
 }
 
 .card {
