@@ -738,47 +738,60 @@ body {
 
 /* /_ !!! _/  */
 
-.project-item { 
-  position: relative; 
-  overflow: hidden; 
+.project-item {
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
 }
 
-.project-item:hover .overlay { 
-  transform: translateX(0); }
+.project-item:hover .overlay {
+  transform: translateX(0);
+}
 
-.overlay { 
-  position: absolute; 
+.overlay {
+  position: absolute;
 
-  /_ transform: translateX(-100%); _/ 
-  /_ transform: translateY(-100%); _/ 
-  /_ transform: translateX(100%); _/ 
-  /_ transform: translateY(138%); _/ 
-  /_ transform: translate(-100%, -100%); _/ 
-  /_ transform: translate(100%, 100%); _/ 
-  /_ transform: translate(-100%, 100%); _/ 
-  /_ transform: translate(100%, -100%); _/ 
-  /_ transform: translate(-100%, 100%); _/
+  /* transform: translateX(-100%);  */
+  /* transform: translateY(-100%);  */
+  /* transform: translateX(100%);  */
+  /* transform: translateY(138%);  */
+  transform: translate(-100%, -100%);
+  /* transform: translate(100%, 100%); */
+  /* transform: translate(100%, -100%); */
+  /* transform: translate(-100%, 100%); */
 
   transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
 
-  cursor: pointer; 
-} 
+  cursor: pointer;
+}
 
-.description { 
+.description {
   padding: 63px 24px;
 
-  font-size: 18px; 
-  line-height: 1.555; 
+  font-size: 18px;
+  line-height: 1.555;
   letter-spacing: 0.03em;
 
-  background-color: var(--overlay-color); 
-  color: var(--primary-white-color); }
+  background-color: var(--overlay-color);
+  color: var(--primary-white-color);
+}
 
-  /_ !! _/ .chat-button { /_ position: sticky; _/ position: fixed; /_ top: 0px; _/
+/* !! */
+.chat-button {
+  /* position: sticky; */
+  position: fixed;
+  /* top: 0px; */
 
-right: 50px; bottom: 70px;
+  right: 50px;
+  bottom: 70px;
 
-display: inline-block; width: 70px; height: 70px; padding: 0; border: none;
-background-color: transparent; background-image: url(../images/chat-icon.svg);
-background-repeat: no-repeat; background-size: contain; }
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/chat-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
