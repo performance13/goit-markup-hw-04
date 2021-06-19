@@ -625,6 +625,8 @@ body {
 .portfolio-list :focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  /* border: 1px solid transparent; */
+  border-radius: 4px;
 }
 
 .button-all {
@@ -748,21 +750,76 @@ body {
   transform: translateX(0);
 }
 
-.overlay {
+.first {
   position: absolute;
 
-  /* transform: translateX(-100%);  */
-  /* transform: translateY(-100%);  */
-  /* transform: translateX(100%);  */
-  /* transform: translateY(138%);  */
   transform: translate(-100%, -100%);
-  /* transform: translate(100%, 100%); */
-  /* transform: translate(100%, -100%); */
-  /* transform: translate(-100%, 100%); */
 
   transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-  cursor: pointer;
+.second {
+  position: absolute;
+
+  transform: translateY(-100%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.third {
+  position: absolute;
+
+  transform: translate(100%, -100%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fourth {
+  position: absolute;
+
+  transform: translateX(-100%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fifth {
+  position: absolute;
+
+  transform: scale(0);
+
+  transition: 500ms cubic-bezier(0, 1, 1, 1);
+}
+
+.sixth {
+  position: absolute;
+
+  transform: translateX(100%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.seventh {
+  position: absolute;
+
+  transform: translate(-100%, 100%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.eighth {
+  position: absolute;
+
+  transform: translateY(145%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.ninth {
+  position: absolute;
+
+  transform: translate(100%, 100%);
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .description {
