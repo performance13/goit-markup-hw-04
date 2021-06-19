@@ -735,3 +735,42 @@ body {
 
   transition: color 300ms cubic-bezier(0.2, 0, 0.2, 1);
 }
+
+/* /_ !!! _/  */
+
+.project-item { 
+  position: relative; 
+  overflow: hidden; 
+  cursor: pointer;
+}
+
+.project-item:hover .overlay { 
+  transform: translateX(0); }
+
+.overlay { 
+  position: absolute; 
+
+  /_ transform: translateX(-100%); _/ 
+  /_ transform: translateY(-100%); _/ 
+  /_ transform: translateX(100%); _/ 
+  /_ transform: translateY(138%); _/ 
+  /_ transform: translate(-100%, -100%); _/ 
+  /_ transform: translate(100%, 100%); _/ 
+  /_ transform: translate(-100%, 100%); _/ 
+  /_ transform: translate(100%, -100%); _/ 
+  /_ transform: translate(-100%, 100%); _/
+
+  transition: 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  cursor: pointer; 
+} 
+
+.description { 
+  padding: 63px 24px;
+
+  font-size: 18px; 
+  line-height: 1.555; 
+  letter-spacing: 0.03em;
+
+  background-color: var(--overlay-color); 
+  color: var(--primary-white-color); }
